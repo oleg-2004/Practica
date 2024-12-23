@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtGallery - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sait.js">
+</head>
+<body>
+    <header>
+        <h1>ArtGallery</h1>
+        <nav>
+            <ul>
+                <li><a href="Glavnaia.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="artist-profile.html">Профиль художника</a></li>
+                <li><a href="vhod.html">Вход / Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-filter">
+            <h2>Поиск работ</h2>
+            <input type="text" placeholder="Введите название или автора">
+            <button type="button">Поиск</button>
+
+            <h3>Фильтры</h3>
+            <label for="style">Стиль:</label>
+            <select id="style">
+                <option>Все стили</option>
+                <option>Импрессионизм</option>
+                <option>Кубизм</option>
+                <option>Реализм</option>
+                <option>Романтизм</option>
+            </select>
+
+            <label for="technique">Техника:</label>
+            <select id="technique">
+                <option>Все техники</option>
+                <option>Масло</option>
+                <option>Акварель</option>
+                <option>Пастель</option>
+            </select>
+
+            <label for="price">Цена:</label>
+            <input type="number" id="price" placeholder="Максимальная цена">
+        </section>
+
+        <section class="latest-works">
+            <h2>Последние добавленные работы:</h2>
+            <div class="work">
+                <img src="snegurochka.jpg" alt="Работа 1">
+                <h3><a href="Rabota.html">Тающая Снегурочка</a></h3>
+                <p>Эскиз к образу Снегурочки, который передает атмосферу зимней сказки и волшебства. В работе мастерски соединены элементы реалистичного и символического изображения.</p>
+                <button>Купить</button>
+            </div>
+            <div class="work">
+                <img src="Проводы покойника.jpeg" alt="Работа 2">
+                <h3><a href="Rabota2.html">Проводы покойника</a></h3>
+                <p> Картина изображает траурную сцену, в которой родственники и друзья прощаются с усопшим. Исполнена в эмоциональном ключе, передавая глубину утраты и скорби.</p>
+                <button>Купить</button>
+            </div>
+            <div class="work">
+                <img src="Парижские тряпичники.jpg" alt="Работа 3">
+                <h3><a href="Rabota3.html">Парижские тряпичники</a></h3>
+                <p>Картина изображает сцену с торговцами тряпками на парижской улице. Она передает атмосферу жизни и торговли, характерную для Парижа в определённый исторический период..</p>
+                <button>Купить</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ArtGallery. Все права защищены.</p>
+    </footer>
+</body>
+</html>
